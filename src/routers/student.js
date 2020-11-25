@@ -7,17 +7,6 @@ router.get("/shuvo", (req, res) => {
     res.send("Hello World!");
 })
 
-// Create New Students
-// app.post("/student", (req, res) => {
-//     console.log(req.body);
-//     const user = new Student(req.body);
-//     user.save().then(() => {
-//         res.status(201).send(user);
-//     }).catch((e) => {
-//         res.status(400).send(e);
-//     })
-// }) 
-
 router.post("/students", async(req, res) => {
     try {
         const user = new Student(req.body);

@@ -29,7 +29,7 @@ const studentSchema = new mongoose.Schema({
     }
 })
 
-// We will create a new collection
+// We will create a new collection (MongoDB)
 const Student = new mongoose.model('Student', studentSchema);
 
 module.exports = Student;
